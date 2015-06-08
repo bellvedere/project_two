@@ -1,0 +1,8 @@
+<h1>Article List</h1>
+
+<% @articles.each do |article| %>
+  <div>
+    <a href="/articles/<%= article["id"] %>"><%= article["name"] %></a> -
+    <a href="/users/<%= article["user_id"] %>"><%= article["user_name"] %></a>
+  </div>
+<% end %>

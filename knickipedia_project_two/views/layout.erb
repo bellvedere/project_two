@@ -1,0 +1,29 @@
+<html>
+
+  <head>
+    <title>Knickipedia</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <script type="text/javascript" src="/scripts/jquery-2.1.3.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <% if @user %>
+      <form method="POST" action="/logout">
+      <!-- hit the DELETE route -->
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="Logout">
+    </form>
+  <% else %>
+  <br>
+  <a href="/login" class="login">Login</a>
+  <% end %>
+  </div>
+
+    <div class="content">
+    <%= yield %>
+    </div>
+
+  </body>
+
+</html>

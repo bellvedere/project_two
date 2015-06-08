@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Knicks;
+  src: url(../fonts/nbaknicks.ttf);
+
+}
+
+body {
+  font-family: Knicks;
+  text-align: center;
+  color: #0953A0; 
+}
+
+nav {
+  padding: 15px;
+  background-color: #C0C0C0;
+  border-radius: 40px 0 40px 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.article {
+  display: inline-block;
+  width: 350px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 10px solid black;
+  border-radius: 10%;
+}
+
+.user {
+  display: inline-block;
+}
+
+.article_list{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content{
+  margin-top: 70px;
+  }
+
+.header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: #FF7518;
+}
+
+#contentid {
+  height: 200px;
+  width: 500px;
+  font-size: 14pt;
+}
+
+.header li{
+  display: inline;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.header ul{
+  float: left;
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
+}
+
+a{
+ color: #0953A0;
+ text-decoration: none;
+}
+
+a:hover{
+  color: red;
+}
+a:visited{
+  text-decoration: none;
+}
+

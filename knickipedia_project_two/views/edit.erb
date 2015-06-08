@@ -1,0 +1,22 @@
+<h1>Edit: <%= @article["name"] %></h1>
+
+<form method="post" action="/articles/<%= @article["id"] %>">
+
+  <input type="hidden" name="_method" value="patch">
+
+  <label for="name">Title</label>
+  <input type="text" name="name" value="<%= @article['name'] %>"><br>
+
+  <label for="content">Article Content</label>
+  <input type="text" name="content" value="<%= @article['content'] %>"><br>
+
+  <select name="user_id">
+    <% @users.each do |user| %>
+      <% selected = ( user["id"] == @article["user_id"]) %>
+      <option value="<%= user["id"] %>" <%= "selected=true" if selected %> ><%= user["name"]%></option>
+    <% end %>
+  </select><br>
+
+  <input type="submit" >
+
+</form>

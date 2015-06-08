@@ -1,0 +1,7 @@
+<div class="article">
+  <h1><%= @article["name"] + " " + @article["content"] %></h1>
+  <h2>User: <%= @user["name"] %></h2>
+</div>
+<br>
+
+<a href="/articles/<%= @article["id"] %>/edit">Edit Article</a>
